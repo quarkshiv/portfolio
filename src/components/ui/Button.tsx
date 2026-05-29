@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
-interface CosmicButtonProps {
+interface ButtonProps {
   children: ReactNode;
   href?: string;
   onClick?: () => void;
@@ -13,9 +13,9 @@ interface CosmicButtonProps {
   icon?: ReactNode;
 }
 
-export default function CosmicButton({ 
+export default function Button({ 
   children, href, onClick, variant = 'primary', size = 'md', className = '', icon 
-}: CosmicButtonProps) {
+}: ButtonProps) {
   const baseClasses = 'relative inline-flex items-center justify-center gap-2 font-medium rounded-full transition-all duration-300 cursor-pointer overflow-hidden group';
   
   const sizeClasses = {

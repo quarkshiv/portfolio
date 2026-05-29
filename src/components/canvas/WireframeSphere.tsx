@@ -4,7 +4,7 @@ import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-export default function CosmicSphere() {
+export default function WireframeSphere() {
   const meshRef = useRef<THREE.Mesh>(null!);
   const wireRef = useRef<THREE.LineSegments>(null!);
   

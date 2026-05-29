@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '@/components/ui/SectionHeading';
-import CosmicButton from '@/components/ui/CosmicButton';
+import Button from '@/components/ui/Button';
 import { socialLinks, personalInfo } from '@/lib/data';
 import { Send, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from '@/components/ui/Icons';
@@ -30,7 +30,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="relative py-24 px-4">
       <SectionHeading
-        title="Cosmic Terminal"
+        title="Contact Terminal"
         subtitle="Establish communication — transmit your message across the cosmos"
       />
 
@@ -77,14 +77,14 @@ export default function ContactSection() {
               />
             </div>
 
-            <CosmicButton
+            <Button
               variant="primary"
               size="lg"
               icon={<Send className="w-5 h-5" />}
               onClick={() => {}}
             >
               {isSent ? '✓ Transmitted!' : 'Transmit Message'}
-            </CosmicButton>
+            </Button>
           </form>
         </motion.div>
 

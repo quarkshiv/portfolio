@@ -311,7 +311,7 @@ function Scene() {
   );
 }
 
-export default function CosmicScene() {
+export default function BackgroundScene() {
   return (
     <div className="fixed inset-0 -z-10">
       <Canvas

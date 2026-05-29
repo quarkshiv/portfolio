@@ -14,7 +14,7 @@ import ShootingStars from '@/components/ui/ShootingStar';
 import CursorTrail from '@/components/ui/CursorTrail';
 
 // Dynamic import for Three.js scene (no SSR)
-const CosmicScene = dynamic(() => import('@/components/canvas/CosmicScene'), {
+const BackgroundScene = dynamic(() => import('@/components/canvas/BackgroundScene'), {
   ssr: false,
 });
 
@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen">
       {/* Background Universe */}
-      <CosmicScene />
+      <BackgroundScene />
 
       {/* Global Effects */}
       <ShootingStars />

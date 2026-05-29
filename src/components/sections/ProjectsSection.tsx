@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SectionHeading from '@/components/ui/SectionHeading';
-import CosmicButton from '@/components/ui/CosmicButton';
+import Button from '@/components/ui/Button';
 import { projects } from '@/lib/data';
 import { ExternalLink, X } from 'lucide-react';
 import { GithubIcon } from '@/components/ui/Icons';
@@ -153,9 +153,9 @@ function ProjectModal({ project, onClose }: { project: typeof projects[0]; onClo
 
         {/* Actions */}
         <div className="flex gap-4">
-          <CosmicButton href={project.github} variant="primary" icon={<GithubIcon className="w-4 h-4" />}>
+          <Button href={project.github} variant="primary" icon={<GithubIcon className="w-4 h-4" />}>
             View Code
-          </CosmicButton>
+          </Button>
         </div>
       </motion.div>
     </motion.div>

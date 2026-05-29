@@ -43,8 +43,8 @@ src/
 │
 ├── components/
 │   ├── canvas/             # Three.js 3D components
-│   │   ├── CosmicScene.tsx # Full-screen starfield + particles
-│   │   └── CosmicSphere.tsx# Animated orbiting sphere
+│   │   ├── BackgroundScene.tsx # Full-screen starfield + particles
+│   │   └── WireframeSphere.tsx # Animated orbiting sphere
 │   │
 │   ├── layout/             # Structural components
 │   │   ├── Navbar.tsx      # Glassmorphic navbar with scroll-spy
@@ -61,7 +61,7 @@ src/
 │   │   └── AIAssistant.tsx         # Floating AI chat widget
 │   │
 │   └── ui/                 # Reusable UI primitives
-│       ├── CosmicButton.tsx        # Themed CTA button
+│       ├── Button.tsx              # Themed CTA button
 │       ├── GlassCard.tsx           # Frosted glass container
 │       ├── HolographicPanel.tsx    # Holographic section wrapper
 │       ├── SectionHeading.tsx      # Consistent section titles

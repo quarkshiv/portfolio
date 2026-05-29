@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
-import CosmicSphere from '@/components/canvas/CosmicSphere';
+import WireframeSphere from '@/components/canvas/WireframeSphere';
 import TypewriterText from '@/components/ui/TypewriterText';
-import CosmicButton from '@/components/ui/CosmicButton';
+import Button from '@/components/ui/Button';
 import { personalInfo, socialLinks, roles } from '@/lib/data';
 import { ExternalLink, ChevronDown, Rocket } from 'lucide-react';
 import { GithubIcon } from '@/components/ui/Icons';
@@ -18,7 +18,7 @@ export default function HeroSection() {
         <div className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-40">
           <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
             <Suspense fallback={null}>
-              <CosmicSphere />
+              <WireframeSphere />
               <ambientLight intensity={0.3} />
             </Suspense>
           </Canvas>
@@ -79,18 +79,18 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.3 }}
           className="flex flex-wrap items-center justify-center gap-4"
         >
-          <CosmicButton href="#journey" variant="primary" size="lg" icon={<Rocket className="w-5 h-5" />}>
+          <Button href="#journey" variant="primary" size="lg" icon={<Rocket className="w-5 h-5" />}>
             Explore Universe
-          </CosmicButton>
-          <CosmicButton href={personalInfo.resume} variant="secondary" size="lg" icon={<ExternalLink className="w-5 h-5" />}>
+          </Button>
+          <Button href={personalInfo.resume} variant="secondary" size="lg" icon={<ExternalLink className="w-5 h-5" />}>
             View Resume
-          </CosmicButton>
-          <CosmicButton href={socialLinks.github} variant="secondary" size="lg" icon={<GithubIcon className="w-5 h-5" />}>
+          </Button>
+          <Button href={socialLinks.github} variant="secondary" size="lg" icon={<GithubIcon className="w-5 h-5" />}>
             GitHub
-          </CosmicButton>
-          <CosmicButton href={socialLinks.leetcode} variant="ghost" size="lg">
+          </Button>
+          <Button href={socialLinks.leetcode} variant="ghost" size="lg">
             LeetCode
-          </CosmicButton>
+          </Button>
         </motion.div>
       </div>
 

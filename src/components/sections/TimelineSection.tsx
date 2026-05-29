@@ -63,7 +63,7 @@ export default function TimelineSection() {
   return (
     <section id="journey" className="relative py-24 px-4">
       <SectionHeading
-        title="Cosmic Journey"
+        title="My Journey"
         subtitle="A timeline through the stars — milestones that shaped my universe"
       />
 

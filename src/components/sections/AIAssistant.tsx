@@ -103,7 +103,7 @@ export default function AIAssistant() {
                 <Bot className="w-4 h-4 text-white" />
               </div>
               <div>
-                <div className="text-sm font-bold text-[#f0f0ff]">Cosmic AI</div>
+                <div className="text-sm font-bold text-[#f0f0ff]">Portfolio AI</div>
                 <div className="text-xs text-[#06ffa5] flex items-center gap-1">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#06ffa5] animate-pulse" />
                   Online
