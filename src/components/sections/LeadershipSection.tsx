@@ -14,7 +14,7 @@ export default function LeadershipSection() {
       />
 
       {/* Network visualization */}
-      <div className="max-w-5xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         {/* Central hub */}
         <motion.div
           initial={{ opacity: 0, scale: 0 }}

@@ -61,13 +61,13 @@ function TimelinePlanet({ item, index }: { item: typeof timeline[0]; index: numb
 
 export default function TimelineSection() {
   return (
-    <section id="journey" className="relative py-24 px-4">
+    <section id="journey" className="relative py-24 px-6 lg:px-8">
       <SectionHeading
         title="My Journey"
         subtitle="A timeline through the stars — milestones that shaped my universe"
       />
 
-      <div className="max-w-4xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         {/* Central timeline line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2 bg-gradient-to-b from-transparent via-[#00d4ff] to-transparent opacity-30 hidden md:block" />
         

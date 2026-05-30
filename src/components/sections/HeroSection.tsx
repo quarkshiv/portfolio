@@ -26,7 +26,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         {/* Subtitle */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold font-orbitron mb-6 leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+          style={{ fontFamily: "'Inter', sans-serif" }}
         >
           <span className="text-[#f0f0ff]">Hi, I&apos;m</span>
           <br />

@@ -156,13 +156,13 @@ export default function SkillsSection() {
   }, [generateStars]);
 
   return (
-    <section id="skills" className="relative py-24 px-4">
+    <section id="skills" className="relative py-24 px-6 lg:px-8">
       <SectionHeading
         title="Skills Constellation"
         subtitle="Navigate through my universe of technologies — each star a skill, each cluster a domain"
       />
 
-      <div ref={containerRef} className="relative max-w-6xl mx-auto h-[500px] md:h-[600px]">
+      <div ref={containerRef} className="relative max-w-7xl mx-auto h-[500px] md:h-[600px]">
         <canvas
           ref={canvasRef}
           className="w-full h-full cursor-crosshair"

@@ -238,11 +238,11 @@ export const aiResponses: Record<string, string> = {
 };
 
 export const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Journey', href: '#journey' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Competitive', href: '#competitive' },
-  { label: 'Leadership', href: '#leadership' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '#home', icon: 'user' },
+  { label: 'Experience', href: '#journey', icon: 'briefcase' },
+  { label: 'Tech Stack', href: '#skills', icon: 'layers' },
+  { label: 'Projects', href: '#projects', icon: 'folder-kanban' },
+  { label: 'Achievements', href: '#competitive', icon: 'trophy' },
+  { label: 'Leadership', href: '#leadership', icon: 'users' },
+  { label: 'Contact', href: '#contact', icon: 'mail' },
 ];

@@ -67,7 +67,7 @@ export default function CompetitiveSection() {
       </motion.div>
 
       {/* Platform cards */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         {competitiveProgramming.platforms.map((platform, index) => (
           <HolographicPanel key={platform.name} title={platform.name} delay={index * 0.15}>
             <div className="p-6 pt-2">
@@ -106,7 +106,7 @@ export default function CompetitiveSection() {
       </div>
 
       {/* Achievements */}
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

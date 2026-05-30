@@ -34,7 +34,7 @@ export default function ContactSection() {
         subtitle="Establish communication — transmit your message across the cosmos"
       />
 
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact form */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}

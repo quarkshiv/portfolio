@@ -8,9 +8,9 @@ import { GithubIcon, LinkedinIcon } from '@/components/ui/Icons';
 export default function Footer() {
   return (
     <footer className="relative py-12 px-4 border-t border-[rgba(0,212,255,0.08)]">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
-          <div className="text-lg font-orbitron font-bold gradient-text">Shivansh Shukla</div>
+          <div className="text-lg font-bold gradient-text" style={{ fontFamily: "'Inter', sans-serif" }}>Shivansh Shukla</div>
           <div className="text-xs text-[#667788] mt-1 font-mono">© {new Date().getFullYear()}</div>
         </div>
 
